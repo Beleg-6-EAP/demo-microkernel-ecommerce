@@ -146,5 +146,6 @@
 	<modules>
 		<module>api</module>
 		<module>app</module>
+		<module>plugins</module>
 	</modules>
 </project>
