@@ -1,4 +1,4 @@
-
+package demo
 import org.pf4j.spring.SpringPluginManager
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
