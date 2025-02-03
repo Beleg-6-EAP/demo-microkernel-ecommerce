@@ -19,7 +19,12 @@ class OrderController(
 
     @PostMapping
     fun createOrder(@RequestBody order: Order): ResponseEntity<Unit> {
-        orderService.createOrder(order)
+        try {
+            orderService.createOrder(order)
+        } catch (e: Exception) {
+            e.printStackTrace()
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build()
+        }
         return ResponseEntity.status(HttpStatus.CREATED).build()
     }
 }
