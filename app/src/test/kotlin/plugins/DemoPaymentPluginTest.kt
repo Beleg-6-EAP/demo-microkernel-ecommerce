@@ -1,14 +1,12 @@
 package plugins
 
 import demo.model.Order
-import demo.plugins.payment.DemoPaymentPlugin
 import demo.model.Payment
+import demo.plugins.payment.DemoPaymentPlugin
 import demo.plugins.payment.internal.PaymentRepository
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.assertThrows
 import org.mockito.Mockito.*
-import org.springframework.dao.DataAccessException
 
 class DemoPaymentPluginTest {
 

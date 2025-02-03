@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  app:
+    image: microkernel-ecommmerce
+    pull_policy: never
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    restart: unless-stopped

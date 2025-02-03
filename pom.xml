@@ -76,11 +76,6 @@
             <version>${kotlin.version}</version>
             <scope>test</scope>
         </dependency>
-		<dependency>
-			<groupId>org.pf4j</groupId>
-			<artifactId>pf4j-spring</artifactId>
-			<version>${pf4j-spring.version}</version>
-		</dependency>
 	</dependencies>
 
 	<build>
