@@ -1,26 +1,25 @@
-package controller
+package demo.controller
 
-import demo.microkernel.model.Order
+import demo.model.Order
+import demo.service.OrderService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
-import service.OrderService
 
 @RestController
 @RequestMapping("/api/orders")
 class OrderController(
-    private val orderService: OrderService
+    private val orderService: OrderService,
 ) {
     @GetMapping
     fun getAllOrders(): ResponseEntity<List<Order>> {
-        // TODO: Implement
-        return ResponseEntity.ok(listOf())
+        return ResponseEntity.ok(orderService.getAllOrders())
     }
 
 
     @PostMapping
     fun createOrder(@RequestBody order: Order): ResponseEntity<Unit> {
-        // TODO: Implement
+        orderService.createOrder(order)
         return ResponseEntity.status(HttpStatus.CREATED).build()
     }
 }

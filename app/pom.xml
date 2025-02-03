@@ -86,9 +86,8 @@
             <version>1.9.25</version>
         </dependency>
         <dependency>
-            <groupId>demo.microkernel</groupId>
-            <artifactId>api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
